@@ -25,12 +25,16 @@ import com.morlunk.jumble.net.JumbleUDPMessageType;
 
 public interface JumbleUDPMessageListener {
 
-    public void messageUDPPing(byte[] data);
-    public void messageVoiceData(byte[] data, JumbleUDPMessageType messageType);
+    void messageUDPPing(byte[] data);
 
-    public static class Stub implements JumbleUDPMessageListener {
+    void messageVoiceData(byte[] data, JumbleUDPMessageType messageType);
 
-        public void messageUDPPing(byte[] data) {}
-        public void messageVoiceData(byte[] data, JumbleUDPMessageType messageType) {}
+    class Stub implements JumbleUDPMessageListener {
+
+        public void messageUDPPing(byte[] data) {
+        }
+
+        public void messageVoiceData(byte[] data, JumbleUDPMessageType messageType) {
+        }
     }
 }
