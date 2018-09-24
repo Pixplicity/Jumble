@@ -19,7 +19,6 @@ package com.morlunk.jumble.util;
 
 /**
  * Formats strings into HTML.
- * Created by andrew on 24/08/13.
  */
 public class MessageFormatter {
 

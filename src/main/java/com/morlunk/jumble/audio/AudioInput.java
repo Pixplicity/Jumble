@@ -21,16 +21,11 @@ import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.util.Log;
 
-import com.morlunk.jumble.BuildConfig;
 import com.morlunk.jumble.Constants;
 import com.morlunk.jumble.exception.AudioInitializationException;
 import com.morlunk.jumble.exception.NativeAudioException;
-import com.morlunk.jumble.model.TalkState;
 import com.morlunk.jumble.protocol.AudioHandler;
 
-/**
- * Created by andrew on 23/08/13.
- */
 public class AudioInput implements Runnable {
     public static final int[] SAMPLE_RATES = { 48000, 44100, 16000, 8000 };
 

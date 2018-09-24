@@ -27,9 +27,6 @@ import java.nio.BufferOverflowException;
 import java.nio.BufferUnderflowException;
 import java.util.Arrays;
 
-/**
-* Created by andrew on 08/12/14.
-*/
 public class OpusEncoder implements IEncoder {
     private final byte[] mBuffer;
     private final short[] mAudioBuffer;

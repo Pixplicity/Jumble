@@ -22,10 +22,6 @@ import com.morlunk.jumble.model.User;
 
 import junit.framework.TestCase;
 
-/**
- * Tests the Channel-User tree model.
- * Created by andrew on 24/10/15.
- */
 public class ModelTest extends TestCase {
 
     public void testUserAddRemove() {

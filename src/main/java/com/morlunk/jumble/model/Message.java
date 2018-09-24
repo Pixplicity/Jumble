@@ -30,7 +30,6 @@ import java.util.List;
  * A class encapsulating a text message from a Mumble server.
  * NOTE: Always prefer using getActorName(). You CANNOT rely on getActor() to provide this info,
  * as the actor may no longer be on the server.
- * Created by andrew on 03/12/13.
  */
 public class Message implements IMessage {
     private int mActor;

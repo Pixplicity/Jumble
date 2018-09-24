@@ -1,10 +1,8 @@
 package com.morlunk.jumble.util;
 
 /**
- * Called when a
- * Created by andrew on 01/03/17.
+ * Called when the protocol is attempted to be used while disconnected.
  */
-
 public class JumbleDisconnectedException extends RuntimeException {
     public JumbleDisconnectedException() {
         super("Caller attempted to use the protocol while disconnected.");

@@ -50,7 +50,6 @@ import com.morlunk.jumble.util.JumbleNetworkListener;
  * Changes to input/output instance vars after the audio threads have been initialized will recreate
  * them in most cases (they're immutable for the purpose of avoiding threading issues).
  * Calling shutdown() will cleanup both input and output threads. It is safe to restart after.
- * Created by andrew on 23/04/14.
  */
 public class AudioHandler extends JumbleNetworkListener implements AudioInput.AudioInputListener {
     public static final int SAMPLE_RATE = 48000;

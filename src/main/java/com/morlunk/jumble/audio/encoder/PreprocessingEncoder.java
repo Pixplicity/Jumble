@@ -27,7 +27,6 @@ import java.nio.BufferUnderflowException;
 /**
  * Wrapper performing preprocessing options on the nested encoder.
  * Uses Speex preprocessor.
- * Created by andrew on 17/04/14.
  */
 public class PreprocessingEncoder implements IEncoder {
     private IEncoder mEncoder;

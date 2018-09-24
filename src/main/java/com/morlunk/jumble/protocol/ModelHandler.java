@@ -46,7 +46,6 @@ import java.util.Map;
 /**
  * Handles network messages related to the user-channel tree model.
  * This includes channels, users, messages, and permissions.
- * Created by andrew on 18/07/13.
  */
 public class ModelHandler extends JumbleTCPMessageListener.Stub {
     private final Context mContext;

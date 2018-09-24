@@ -21,9 +21,6 @@ import com.morlunk.jumble.exception.NativeAudioException;
 
 import java.nio.ByteBuffer;
 
-/**
- * Created by andrew on 07/03/14.
- */
 public interface IDecoder {
     /**
      * Decodes the encoded data provided into float PCM data.

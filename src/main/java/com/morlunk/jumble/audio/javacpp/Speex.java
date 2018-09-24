@@ -32,7 +32,6 @@ import java.nio.ByteBuffer;
 
 /**
  * JavaCPP interface for Speex JNI.
- * Created by andrew on 18/10/13.
  */
 @Platform(library= "jnispeex", cinclude={"<speex/speex.h>","<speex/speex_types.h>", "<speex/speex_bits.h>","<speex/speex_jitter.h>", "<speex/speex_preprocess.h>", "<speex/speex_resampler.h>"})
 public class Speex {

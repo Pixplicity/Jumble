@@ -28,9 +28,6 @@ import com.morlunk.jumble.protocol.AudioHandler;
 
 import java.nio.ByteBuffer;
 
-/**
- * Created by andrew on 20/10/13.
- */
 @Platform(library="jnicelt11", cinclude={"<celt.h>","<celt_types.h>"})
 public class CELT11 {
     public static final int CELT_GET_BITSTREAM_VERSION = 2000;

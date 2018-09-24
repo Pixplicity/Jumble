@@ -17,9 +17,6 @@
 
 package com.morlunk.jumble.audio;
 
-/**
- * Created by andrew on 05/04/15.
- */
 public class AudioUser {
     private static final float AVERAGE_DECAY = 0.99f;
 

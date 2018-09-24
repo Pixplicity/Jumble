@@ -25,7 +25,6 @@ import java.nio.BufferUnderflowException;
 /**
  * IEncoder provides an interface for native audio encoders to buffer and serve encoded audio
  * data.
- * Created by andrew on 07/03/14.
  */
 public interface IEncoder {
     /**

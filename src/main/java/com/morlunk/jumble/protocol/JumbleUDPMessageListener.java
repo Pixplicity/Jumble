@@ -19,10 +19,6 @@ package com.morlunk.jumble.protocol;
 
 import com.morlunk.jumble.net.JumbleUDPMessageType;
 
-/**
- * Created by andrew on 21/01/14.
- */
-
 public interface JumbleUDPMessageListener {
 
     void messageUDPPing(byte[] data);

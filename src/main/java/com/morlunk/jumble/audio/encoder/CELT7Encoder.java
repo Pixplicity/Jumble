@@ -22,14 +22,10 @@ import com.googlecode.javacpp.Pointer;
 import com.morlunk.jumble.audio.javacpp.CELT7;
 import com.morlunk.jumble.exception.NativeAudioException;
 import com.morlunk.jumble.net.PacketBuffer;
-import com.morlunk.jumble.protocol.AudioHandler;
 
 import java.nio.BufferOverflowException;
 import java.nio.BufferUnderflowException;
 
-/**
-* Created by andrew on 08/12/14.
-*/
 public class CELT7Encoder implements IEncoder {
     private final byte[][] mBuffer;
     private final int[] mPacketLengths;

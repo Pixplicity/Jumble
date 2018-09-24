@@ -37,13 +37,10 @@ import java.util.Queue;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-/**
- * Created by andrew on 16/07/13.
- */
 public class AudioOutputSpeech implements Callable<AudioOutputSpeech.Result> {
 
     interface TalkStateListener {
-        public void onTalkStateUpdated(int session, TalkState state);
+        void onTalkStateUpdated(int session, TalkState state);
     }
 
     private IDecoder mDecoder;

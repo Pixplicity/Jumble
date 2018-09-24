@@ -19,7 +19,6 @@ package com.morlunk.jumble.audio.inputmode;
 
 /**
  * An input mode that sends audio if the amplitude exceeds a certain threshold.
- * Created by andrew on 13/02/16.
  */
 public class ActivityInputMode implements IInputMode {
     // Continue speech for 250ms to prevent dropping.

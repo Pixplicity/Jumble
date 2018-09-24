@@ -19,7 +19,6 @@ package com.morlunk.jumble.audio.inputmode;
 
 /**
  * A talk state engine, providing information regarding when it is appropriate to send audio.
- * Created by andrew on 13/02/16.
  */
 public interface IInputMode {
     /**

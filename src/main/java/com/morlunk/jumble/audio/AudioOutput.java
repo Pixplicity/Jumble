@@ -46,9 +46,6 @@ import java.util.concurrent.Future;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * Created by andrew on 16/07/13.
- */
 public class AudioOutput implements Runnable, AudioOutputSpeech.TalkStateListener {
     private Map<Integer,AudioOutputSpeech> mAudioOutputs = new HashMap<>();
     private AudioTrack mAudioTrack;

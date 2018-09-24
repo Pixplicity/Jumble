@@ -35,8 +35,6 @@ import javax.crypto.spec.SecretKeySpec;
  * Until recently, this would've posed a problem- Jumble is licensed under Apache v2, and the patent was only licensed for use with GPL software without authorization.
  * As of January 2013, the author has given a free license for any open source software certified by the OSI (Apache v2 included)
  * http://www.cs.ucdavis.edu/~rogaway/ocb/license.htm
- *
- * Created by andrew on 24/06/13.
  */
 public class CryptState {
     public static final int AES_BLOCK_SIZE = 16;

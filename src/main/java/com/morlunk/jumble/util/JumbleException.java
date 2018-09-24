@@ -22,9 +22,6 @@ import android.os.Parcelable;
 
 import com.morlunk.jumble.protobuf.Mumble;
 
-/**
- * Created by andrew on 14/07/13.
- */
 public class JumbleException extends Exception implements Parcelable {
 
     public static final Creator<JumbleException> CREATOR = new Creator<JumbleException>() {

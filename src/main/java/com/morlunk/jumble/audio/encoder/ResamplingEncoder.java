@@ -25,7 +25,6 @@ import java.nio.BufferUnderflowException;
 
 /**
  * Wraps around another encoder, resampling up/down all input using the Speex resampler.
- * Created by andrew on 16/04/14.
  */
 public class ResamplingEncoder implements IEncoder {
     private static final int SPEEX_RESAMPLE_QUALITY = 3;
