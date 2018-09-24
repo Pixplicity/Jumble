@@ -248,7 +248,7 @@ public class JumbleService extends Service implements IJumbleService, IJumbleSes
     public void onCreate() {
         super.onCreate();
         PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
-        mWakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Jumble");
+        mWakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "jumble:service");
         mHandler = new Handler(getMainLooper());
         mCallbacks = new JumbleCallbacks();
         mAudioBuilder = new AudioHandler.Builder()
@@ -345,6 +345,11 @@ public class JumbleService extends Service implements IJumbleService, IJumbleSes
 
     @Override
     public void onConnectionSynchronized() {
+        if (!mConnection.isConnected()) {
+            // We prematurely disconnected
+            return;
+        }
+
         mConnectionState = ConnectionState.CONNECTED;
 
         Log.v(Constants.TAG, "Connected");
