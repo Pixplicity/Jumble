@@ -32,8 +32,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:21.+'
-    implementation 'com.google.protobuf:protobuf-java:3.0.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.google.protobuf:protobuf-java:3.4.0'
 
     api 'com.madgag.spongycastle:core:1.51.0.0'
     // Custom PKCS12 keybag parse modifications to support Mumble unencrypted certificates
@@ -53,7 +53,7 @@ android {
     defaultConfig {
         testApplicationId "com.morlunk.jumble.test"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 28
 
        ndk {
