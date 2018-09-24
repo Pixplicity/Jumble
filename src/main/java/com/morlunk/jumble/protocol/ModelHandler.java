@@ -404,17 +404,19 @@ public class ModelHandler extends JumbleTCPMessageListener.Stub {
     @Override
     public void messageUserRemove(Mumble.UserRemove msg) {
         final User user = mUsers.get(msg.getSession());
+        String userName = user == null ? "a user" : user.getName();
         final User actor = mUsers.get(msg.getActor());
+        String actorName = actor == null ? "an admin" : actor.getName();
         final String reason = msg.getReason();
 
-        if(msg.getSession() == mSession)
-            mLogger.logWarning(mContext.getString(msg.getBan() ? R.string.chat_notify_kick_ban_self : R.string.chat_notify_kick_self, MessageFormatter.highlightString(actor.getName()), reason));
-        else if(actor != null)
-            mLogger.logWarning(mContext.getString(msg.getBan() ? R.string.chat_notify_kick_ban : R.string.chat_notify_kick, MessageFormatter.highlightString(actor.getName()), reason, MessageFormatter.highlightString(user.getName())));
+        if (msg.getSession() == mSession)
+            mLogger.logWarning(mContext.getString(msg.getBan() ? R.string.chat_notify_kick_ban_self : R.string.chat_notify_kick_self, MessageFormatter.highlightString(actorName), reason));
+        else if (actor != null)
+            mLogger.logWarning(mContext.getString(msg.getBan() ? R.string.chat_notify_kick_ban : R.string.chat_notify_kick, MessageFormatter.highlightString(actorName), reason, MessageFormatter.highlightString(userName)));
         else
-            mLogger.logInfo(mContext.getString(R.string.chat_notify_disconnected, MessageFormatter.highlightString(user.getName())));
+            mLogger.logInfo(mContext.getString(R.string.chat_notify_disconnected, MessageFormatter.highlightString(userName)));
 
-        user.setChannel(null);
+        if (user != null) user.setChannel(null);
         mObserver.onUserRemoved(user, reason);
     }
 
